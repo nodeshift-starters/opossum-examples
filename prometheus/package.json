@@ -6,25 +6,12 @@
   "scripts": {
     "start": "node src/app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/helio-frota/express-prometheus-minishift.git"
-  },
-  "keywords": [
-    "express",
-    "prometheus",
-    "minishift"
-  ],
   "files": [
     "package.json",
     "src"
   ],
   "author": "Helio Frota",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/helio-frota/express-prometheus-minishift/issues"
-  },
-  "homepage": "https://github.com/helio-frota/express-prometheus-minishift#readme",
   "dependencies": {
     "express": "^4.16.4",
     "kube-probe": "~0.3.2",

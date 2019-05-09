@@ -2,19 +2,6 @@
 
 Example based on the blog post: https://developers.redhat.com/blog/2018/12/21/monitoring-node-js-applications-on-openshift-with-prometheus/
 
-
-## Customize for your app
-
-Change the name of your app (replace all the entries on each file):
-
-. [package.json](https://github.com/nodeshift-starters/opossum-examples/prometheus/blob/master/package.json)
-
-. [get-app-url.sh](https://github.com/nodeshift-starters/opossum-examples/prometheus/blob/master/get-app-url.sh)
-
-. [prometheus.yml](https://github.com/nodeshift-starters/opossum-examples/prometheus/blob/master/prometheus.yml)
-
-. [bench-test.sh](https://github.com/nodeshift-starters/opossum-examples/prometheus/blob/master/bench-test.sh)
-
 ## How to setup and run 
 
 1. Clone this repository
