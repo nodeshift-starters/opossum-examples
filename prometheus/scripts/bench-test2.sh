@@ -2,6 +2,6 @@
 
 APPURL=$(oc get -o template route express-prometheus-minishift --template="http://{{.spec.host}}/api/greeting")
 
-# 5 requests
-# No concurrent requests
-ab -n 5 -c 1 $APPURL
+# 10 requests
+# 2 concurrent requests
+ab -n 10 -c 2 $APPURL

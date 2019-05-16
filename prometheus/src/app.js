@@ -9,6 +9,8 @@ const app = express();
 const port = process.argv[2] || 8080;
 const circuit = opossum(somethingThatCouldFail);
 
+let failureCounter = 0;
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
@@ -36,7 +38,10 @@ app.get('/metrics', (request, response) => {
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`));
 
 function somethingThatCouldFail(echo) {
-  return (Date.now() % 5 === 0)
-    ? Promise.reject(new Error('Random failure'))
-    : Promise.resolve(echo);
+  if (Date.now() % 5 === 0) {
+    console.log(++failureCounter);
+    return Promise.reject(new Error('Random failure'));
+  } else {
+    return Promise.resolve(echo);
+  }
 }
