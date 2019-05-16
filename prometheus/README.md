@@ -13,39 +13,3 @@ Example based on the blog post: https://developers.redhat.com/blog/2018/12/21/mo
 7. Access prometheus URL: `https://prom-myproject.192.168.99.100.nip.io/`
 8. Execute the PromQL: `my_application:hello_duration_sum / my_application:hello_duration_count`
 
-## Versions
-
-```
-oc version
-oc v3.11.0+0cbc58b
-
-minishift version
-minishift v1.33.0+ba29431
-
-node --version
-v10.15.3
-
-docker version
-Client:
- Version:           18.09.4
- API version:       1.39
- Go version:        go1.10.8
- Git commit:        d14af54
- Built:             Wed Mar 27 18:36:04 2019
- OS/Arch:           linux/amd64
- Experimental:      false
-
-Server: Docker Engine - Community
- Engine:
-  Version:          18.09.4
-  API version:      1.39 (minimum version 1.12)
-  Go version:       go1.10.8
-  Git commit:       d14af54
-  Built:            Wed Mar 27 18:04:46 2019
-  OS/Arch:          linux/amd64
-  Experimental:     false
-
-cat /etc/redhat-release 
-Fedora release 29 (Twenty Nine)
-```
-

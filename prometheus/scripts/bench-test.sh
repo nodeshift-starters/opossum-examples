@@ -1,3 +1,4 @@
 #!/bin/bash
 
-ab -n 500000 -c 100 http://express-prometheus-minishift-myproject.192.168.99.100.nip.io/api/greeting
+APPURL=$(oc get -o template route express-prometheus-minishift --template="http://{{.spec.host}}/api/greeting")
+ab -n 5000 -c 100 $APPURL
