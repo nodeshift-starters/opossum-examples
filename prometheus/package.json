@@ -16,6 +16,6 @@
     "express": "^4.16.4",
     "kube-probe": "~0.3.2",
     "nodemon": "^1.18.10",
-    "opossum": "nodeshift/opossum#prom-client"
+    "opossum": "nodeshift/opossum#prometheus-client"
   }
 }
