@@ -7,7 +7,7 @@ const probe = require('kube-probe');
 
 const app = express();
 const port = process.argv[2] || 8080;
-const circuit = opossum(somethingThatCouldFail);
+const circuit = opossum(somethingThatCouldFail, {usePrometheus: true});
 
 let failureCounter = 0;
 
