@@ -1,7 +1,7 @@
 'use strict';
 
-const Hapi = require('hapi');
-const Boom = require('boom');
+const Hapi = require('@hapi/hapi');
+const Boom = require('@hapi/boom');
 const path = require('path');
 
 const server = Hapi.Server({
@@ -11,7 +11,7 @@ const server = Hapi.Server({
 
 async function start () {
   // static file serving
-  await server.register({ plugin: require('inert') });
+  await server.register({ plugin: require('@hapi/inert') });
 
   [ ['/', path.join(__dirname, 'index.html')],
     ['/app.js', path.join(__dirname, 'app.js')],
