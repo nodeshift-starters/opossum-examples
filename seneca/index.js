@@ -1,7 +1,7 @@
 'use strict';
 
 // Gateway for our seneca microservices
-const Hapi = require('hapi');
+const Hapi = require('@hapi/hapi');
 const path = require('path');
 const seneca = require('seneca')();
 const opossum = require('opossum');
@@ -26,7 +26,7 @@ seneca.use('service', { delay: 20 });
 
 async function start () {
   // static file serving
-  await server.register({ plugin: require('inert') });
+  await server.register({ plugin: require('@hapi/inert') });
 
   [ ['/', path.join(__dirname, 'index.html')],
     ['/app.js', path.join(__dirname, 'app.js')],

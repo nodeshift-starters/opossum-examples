@@ -1,6 +1,6 @@
 'use strict';
 
-const Boom = require('boom');
+const Boom = require('@hapi/boom');
 
 module.exports = exports = function flakeyService (options) {
   console.log('Flakey seneca service delay', options.delay);

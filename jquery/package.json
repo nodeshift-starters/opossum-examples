@@ -20,8 +20,6 @@
   },
   "description": "Simple example with opossum and browser.",
   "dependencies": {
-    "angular": "1.7.8",
-    "angular-route": "1.7.8",
     "@hapi/boom": "7.4.2",
     "bootstrap": "4.3.1",
     "@hapi/hapi": "18.3.1",
