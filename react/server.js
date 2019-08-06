@@ -1,7 +1,7 @@
 'use strict';
 
-const Hapi = require('hapi');
-const Boom = require('boom');
+const Hapi = require('@hapi/hapi');
+const Boom = require('@hapi/boom');
 
 const server = Hapi.Server({
   host: 'localhost',
