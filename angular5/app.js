@@ -1,6 +1,6 @@
 'use strict';
 
-const Hapi = require('hapi');
+const Hapi = require('@hapi/hapi');
 const flakeyService = require('./service');
 
 const server = Hapi.Server({
@@ -16,7 +16,7 @@ process.on('uncaughtException', e => {
 
 async function init (server) {
   // static file serving
-  await server.register(require('inert'));
+  await server.register(require('@hapi/inert'));
   server.route({
     method: 'GET',
     path: '/{param*}',

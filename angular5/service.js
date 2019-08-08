@@ -1,6 +1,6 @@
 'use strict';
 
-const Boom = require('boom');
+const Boom = require('@hapi/boom');
 
 // reset the delay every 10 seconds
 const baseline = 20;

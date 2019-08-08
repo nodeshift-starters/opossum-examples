@@ -1,5 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import circuitBreaker from 'opossum';
+import circuitBreaker from 'opossum/dist/opossum';
 import axios from 'axios';
 
 @Component({
