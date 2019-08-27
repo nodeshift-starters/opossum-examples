@@ -18,7 +18,7 @@
     resetTimeout: 5000
   };
 
-  const circuit = circuitBreaker(_ => $.get(route), circuitBreakerOptions);
+  const circuit = new circuitBreaker(_ => $.get(route), circuitBreakerOptions);
 
   circuit.fallback(_ =>
     ({ body: `${route} unavailable right now. Try later.` }));
