@@ -10,7 +10,7 @@ const server = Hapi.Server({
   host: 'localhost',
   port: 3000
 });
-const circuit = opossum(serviceFactory({ name: 'flakeyService' }));
+const circuit = new opossum(serviceFactory({ name: 'flakeyService' }));
 
 function serviceFactory (service) {
   return () =>
