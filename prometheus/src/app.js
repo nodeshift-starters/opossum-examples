@@ -1,17 +1,21 @@
 'use strict';
 
-const opossum = require('opossum');
+const Opossum = require('opossum');
+const PrometheusMetrics = require('opossum-prometheus');
 const express = require('express');
 const bodyParser = require('body-parser');
 const probe = require('kube-probe');
 
 const app = express();
 const port = process.argv[2] || 8080;
-const circuit = opossum(somethingThatCouldFail, {
-  usePrometheus: true,
+const circuit = new Opossum(somethingThatCouldFail, {
   errorThresholdPercentage: 10,
   resetTimeout: 2000
 });
+
+// Provide the circuit to the Opossum Prometheus plugin module
+const prometheus = new PrometheusMetrics([circuit]);
+
 
 let failureCounter = 0;
 
@@ -36,7 +40,7 @@ app.use('/api/greeting', (request, response) => {
 probe(app);
 
 app.get('/metrics', (request, response) => {
-  response.send(circuit.metrics.metrics);
+  response.send(prometheus.metrics);
 });
 
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`));
