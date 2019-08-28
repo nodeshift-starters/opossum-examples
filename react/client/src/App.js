@@ -18,7 +18,7 @@ class App extends Component {
     this.circuitBreakerOptions = { timeout: 500, maxFailures: 3, resetTimeout: 5000 };
     this.route = 'http://localhost:3000/flakeyService';
 
-    this.circuit = circuitBreaker(() => $.get(this.route), this.circuitBreakerOptions);
+    this.circuit = new circuitBreaker(() => $.get(this.route), this.circuitBreakerOptions);
 
     // circuit breaker events
     this.circuit.fallback(() =>
