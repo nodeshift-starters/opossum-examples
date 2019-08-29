@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import circuitBreaker from 'opossum/dist/opossum';
+import circuitBreaker from 'opossum';
 import $ from 'jquery';
 
 class App extends Component {
