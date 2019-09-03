@@ -1,5 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import circuitBreaker from 'opossum/dist/opossum';
+const opossum = require('opossum');
 import axios from 'axios';
 
 @Component({
@@ -21,7 +21,7 @@ export class ButtonComponent implements OnInit {
     errorThresholdPercentage: 50,
     resetTimeout: 5000
   };
-  circuit = circuitBreaker(_ => axios.get(this.route), this.circuitBreakerOptions);
+  circuit = new opossum(_ => axios.get(this.route), this.circuitBreakerOptions);
 
   ngOnInit() {
 
