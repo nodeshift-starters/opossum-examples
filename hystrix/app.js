@@ -3,7 +3,8 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-const circuitBreaker = require('../../');
+const CircuitBreaker = require('opossum');
+const HystrixStats = require('opossum-hystrix');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -45,11 +46,13 @@ function fallback () {
   return 'Service Fallback';
 }
 
-const circuit = circuitBreaker(flakeFunction, circuitBreakerOptions);
+const circuit = new CircuitBreaker(flakeFunction, circuitBreakerOptions);
 circuit.fallback(fallback);
 
+const hystrixMetrics = new HystrixStats([circuit]);
+
 // setup our SSE endpoint
-app.use('/hystrix.stream', require('./hystrix-stream')(circuitBreaker));
+app.use('/hystrix.stream', require('./hystrix-stream')(HystrixStats));
 
 app.use('/', (request, response) => {
   circuit.fire().then(result => {
