@@ -1,5 +1,5 @@
 
-function hystrixStream (circuitBreaker) {
+function hystrixStream (hystrixStream) {
   return (request, response) => {
     response.writeHead(200, {
       'Content-Type': 'text/event-stream',
@@ -8,7 +8,7 @@ function hystrixStream (circuitBreaker) {
     response.write('retry: 10000\n');
     response.write('event: connecttime\n');
 
-    circuitBreaker.stats.pipe(response);
+    hystrixStream.stream.pipe(response);
   };
 }
 
