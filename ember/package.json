@@ -1,0 +1,20 @@
+{
+  "name": "ember-opossum",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "node start-client.js"
+  },
+  "author": "tiago fabre",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "7.4.2",
+    "concurrently": "4.1.1",
+    "@hapi/hapi": "18.3.1",
+    "url-parse": "1.4.7",
+    "mime": "2.4.4"
+  }
+}
