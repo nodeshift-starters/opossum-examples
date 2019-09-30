@@ -18,27 +18,18 @@
 
   <div className="row">
     <button id="flakey" {{action "makeRequest"}}>
-        Flakey Service
+        Flakey service
     </button>
   </div>
   <div className="row" id="flakeyResponse">
     <h2>FLAKEY RESPONSES</h2>
+    <span className="clear" {{action "clear"}}>Click to clear</span>
     {{#each this.responses as |response|}}
-      <p>
-        <span className={{lowercase response.state}}>{{response.body}}</span>
+        <p className={{lowercase response.state}}>
+          <span>{{response.state}}</span>
+          <span>{{response.body}}</span>
       </p>
     {{/each}}
-    {{!-- <span className="clear" onClick={this.clearNodes}>Click to clear</span>
-    {
-      this.state.requestState.map((element) => {
-        return (
-          <p key={element.id} className={element.state.toLowerCase()}>
-            <span>{ element.state}: </span>
-            <span>{ element.body}</span>
-          </p>
-        );
-      })
-    } --}}
   </div>
 </div>
 
