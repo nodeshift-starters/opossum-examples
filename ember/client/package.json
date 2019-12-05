@@ -43,7 +43,7 @@
     "eslint-plugin-ember": "^6.2.0",
     "eslint-plugin-node": "^9.0.1",
     "loader.js": "^4.7.0",
-    "opossum": "~4.0.0",
+    "opossum": "~4.2.1",
     "qunit-dom": "^0.8.4"
   },
   "engines": {
