@@ -9,7 +9,7 @@
     "body-parser": "^1.18.3",
     "debug": "~4.1.1",
     "express": "^4.16.4",
-    "opossum": "~4.0.0",
+    "opossum": "~4.2.1",
     "opossum-hystrix": "0.0.1"
   }
 }
