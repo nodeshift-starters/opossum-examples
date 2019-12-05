@@ -30,7 +30,7 @@
     "@hapi/hoek": "8.2.0",
     "https-proxy-agent": "2.2.2",
     "@hapi/inert": "5.2.1",
-    "opossum": "4.0.0",
+    "opossum": "4.2.1",
     "rxjs": "6.5.2",
     "rxjs-compat": "6.5.2",
     "sass": "1.22.9",
