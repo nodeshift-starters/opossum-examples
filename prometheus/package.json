@@ -15,7 +15,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "kube-probe": "~0.3.2",
-    "nodemon": "^1.18.10",
+    "nodemon": "^2.0.2",
     "opossum": "4.2.1",
     "opossum-prometheus": "0.0.2"
   }
