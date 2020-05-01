@@ -1,0 +1,50 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - eslint > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - eslint > inquirer > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - eslint > table > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > eraro > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > gex > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > norma > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > patrun > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > seneca-transport > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > norma > eraro > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > seneca-transport > eraro > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > use-plugin > eraro > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > patrun > gex > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > seneca-transport > gex > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > use-plugin > norma > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > seneca-transport > patrun > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > use-plugin > norma > eraro > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > seneca-transport > patrun > gex > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > use-plugin > @hapi/lab > eslint > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > use-plugin > @hapi/lab > eslint > inquirer > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
+    - seneca > use-plugin > @hapi/lab > eslint > table > lodash:
+        patched: '2020-05-01T07:32:00.376Z'
