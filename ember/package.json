@@ -6,7 +6,9 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node server.js",
-    "client": "node start-client.js"
+    "client": "node start-client.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "tiago fabre",
   "license": "ISC",
@@ -15,6 +17,8 @@
     "concurrently": "4.1.1",
     "@hapi/hapi": "19.1.1",
     "url-parse": "1.4.7",
-    "mime": "2.4.4"
-  }
+    "mime": "2.4.4",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
