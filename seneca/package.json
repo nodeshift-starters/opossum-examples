@@ -5,7 +5,9 @@
   "license": "Apache-2.0",
   "scripts": {
     "lint": "eslint test/*.js index.js app.js",
-    "start": "node ."
+    "start": "node .",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -24,14 +26,16 @@
     "bootstrap": "4.3.1",
     "@hapi/hapi": "18.3.1",
     "@hapi/inert": "5.2.1",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "lodash": "4.17.15",
     "opossum": "4.2.1",
-    "seneca": "3.13.0"
+    "seneca": "3.13.0",
+    "snyk": "^1.316.1"
   },
   "bugs": {
     "url": "https://github.com/nodeshift/opossum/issues"
   },
   "homepage": "https://github.com/nodeshift/opossum#readme",
-  "author": ""
+  "author": "",
+  "snyk": true
 }
