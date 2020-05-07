@@ -5,6 +5,7 @@ For every request the service receives, the response time is increased.
 [The service returns a `423 (Locked)` error if the response time is above 1000ms.](https://github.com/nodeshift-starters/opossum-examples/blob/master/angular9/server.js#L27) This example also has a web frontend at `http://localhost:4200/` for interacting with the service.
 
 1. Install Angular CLI
+
 ```sh
 $ npm install -g @angular/cli
 ```
