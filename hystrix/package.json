@@ -8,7 +8,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "debug": "~4.1.1",
-    "express": "^4.16.4",
+    "express": "^4.17.1",
     "opossum": "~4.2.1",
     "opossum-hystrix": "0.0.1"
   }
