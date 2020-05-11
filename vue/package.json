@@ -1,0 +1,22 @@
+{
+  "name": "opossum-vue",
+  "version": "1.0.0",
+  "description": "Vue.js example application using the opossum Node.js circuit breaker",
+  "main": "index.js",
+  "scripts": {
+    "server": "node server.js",
+    "vue": "cd ./client && npm run serve",
+    "start": "concurrently -n server,vue -c bgBlue,bgGreen \"npm:server\" \"npm:vue\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "^9.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
