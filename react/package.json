@@ -1,20 +1,22 @@
 {
-  "name": "react-opossum",
-  "version": "0.0.1",
+  "name": "opossum-react",
+  "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node server.js",
-    "client": "node start-client.js"
+    "react": "cd ./client && npm start",
+    "start": "concurrently -n server,react -c bgRed,bgBlue \"npm:server\" \"npm:react\""
   },
-  "author": "tiago fabre",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hapi/boom": "7.4.2",
-    "concurrently": "4.1.1",
-    "@hapi/hapi": "18.3.1",
-    "url-parse": "1.4.7",
-    "mime": "2.4.4"
+    "@hapi/boom": "^9.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0"
   }
 }

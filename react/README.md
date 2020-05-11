@@ -1,20 +1,25 @@
 # React Example
 
-This example exposes a simple service at the route `http://localhost:3001/flakeyService`. As the service receives requests, it gets slower and slower. Once it takes more than 1 second to respond, the service just returns a `423 (Locked)` error. Also at the route `http://localhost:3000` has a server running a react app responsible to consume the flakey service.
+This example exposes a simple service at the route `http://localhost:3000/flakeyService`.
+For every request the service receives, the response time is increased.
+[The service returns a `423 (Locked)` error if the response time is above 1000ms.](https://github.com/nodeshift-starters/opossum-examples/blob/master/react/server.js#L27) This example also has a web frontend at `http://localhost:8000/` for interacting with the service.
 
-Install dependencies.
-
+1. Install dependencies
 
 ```sh
-$ npm i && cd client && npm i && cd ..
-
+$ npm install && cd client/ && npm install && cd ..
 ```
 
-Start the server.
+2. Run the example
 
+This example uses the [concurrently](https://www.npmjs.com/package/concurrently) npm module to run the server and the client at the same time.
 
 ```sh
 $ npm start
 ```
 
-Browse to `http://localhost:3000` and click the button to see the service in action.
+<h3>Terminal</h3>
+<img src="./images/react-terminal.png" width="500">
+
+<h3>Browser</h3>
+<img src="./images/react-browser.png" width="500">
