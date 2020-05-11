@@ -6,7 +6,9 @@
   "scripts": {
     "server": "node server.js",
     "react": "cd ./client && npm start",
-    "start": "concurrently -n server,react -c bgRed,bgBlue \"npm:server\" \"npm:react\""
+    "start": "concurrently -n server,react -c bgRed,bgBlue \"npm:server\" \"npm:react\"",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -14,9 +16,11 @@
   "dependencies": {
     "@hapi/boom": "^9.1.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "snyk": "^1.320.1"
   },
   "devDependencies": {
     "concurrently": "^5.2.0"
-  }
+  },
+  "snyk": true
 }
