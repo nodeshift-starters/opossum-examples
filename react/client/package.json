@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "opossum-react-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
