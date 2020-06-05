@@ -17,6 +17,6 @@
     "kube-probe": "~0.3.2",
     "nodemon": "^2.0.4",
     "opossum": "4.2.1",
-    "opossum-prometheus": "0.0.2"
+    "opossum-prometheus": "0.2.0"
   }
 }
