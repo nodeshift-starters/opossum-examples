@@ -23,7 +23,7 @@
     "@hapi/boom": "9.1.0",
     "bootstrap": "4.5.2",
     "@hapi/hapi": "19.2.0",
-    "@hapi/inert": "6.0.1",
+    "@hapi/inert": "6.0.2",
     "jquery": "3.5.1",
     "opossum": "4.2.1"
   },
