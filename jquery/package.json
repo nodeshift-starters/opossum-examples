@@ -25,7 +25,7 @@
     "@hapi/hapi": "19.2.0",
     "@hapi/inert": "6.0.3",
     "jquery": "3.5.1",
-    "opossum": "5.0.1"
+    "opossum": "5.0.2"
   },
   "bugs": {
     "url": "https://github.com/nodeshift/opossum/issues"
