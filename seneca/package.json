@@ -16,7 +16,7 @@
     "eslint-config-semistandard": "14.0.0",
     "eslint-config-standard": "13.0.1",
     "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-standard": "4.0.2"
+    "eslint-plugin-standard": "4.1.0"
   },
   "description": "Simple example with opossum and browser.",
   "dependencies": {
