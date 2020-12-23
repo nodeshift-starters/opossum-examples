@@ -26,7 +26,7 @@
     "@hapi/inert": "6.0.3",
     "jquery": "3.5.1",
     "lodash": "4.17.20",
-    "opossum": "5.0.2",
+    "opossum": "5.1.0",
     "seneca": "3.22.0"
   },
   "bugs": {
