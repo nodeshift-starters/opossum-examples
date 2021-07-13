@@ -1,0 +1,22 @@
+{
+  "name": "multiple-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "start": "concurrently \"node express-end.js\" \"node express-middleman.js\"",
+    "test": "node benchmark/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "opossum": "^5.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "lowcarb": "^0.5.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
