@@ -11,7 +11,7 @@
   "author": "tiago fabre",
   "license": "ISC",
   "dependencies": {
-    "@hapi/boom": "9.1.1",
+    "@hapi/boom": "9.1.2",
     "concurrently": "5.3.0",
     "@hapi/hapi": "19.2.0",
     "url-parse": "1.5.0",
