@@ -1,0 +1,24 @@
+spec:
+  template:
+    spec:
+      containers:
+        - readinessProbe:
+            httpGet:
+              path: /ready
+              port: 8080
+              scheme: HTTP
+            failureThreshold: 3
+            initialDelaySeconds: 10
+            periodSeconds: 5
+            successThreshold: 1
+            timeoutSeconds: 1
+          livenessProbe:
+            httpGet:
+              path: /live
+              port: 8080
+              scheme: HTTP
+            failureThreshold: 2
+            initialDelaySeconds: 60
+            periodSeconds: 3
+            successThreshold: 1
+            timeoutSeconds: 1
