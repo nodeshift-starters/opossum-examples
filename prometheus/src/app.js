@@ -4,7 +4,6 @@ const Opossum = require('opossum');
 const PrometheusMetrics = require('opossum-prometheus');
 const express = require('express');
 const bodyParser = require('body-parser');
-const probe = require('kube-probe');
 
 const app = express();
 const port = process.argv[2] || 8080;
@@ -41,6 +40,14 @@ probe(app);
 
 app.get('/metrics', (request, response) => {
   response.send(prometheus.metrics);
+});
+
+app.use('/ready', (request, response) => {
+  return response.sendStatus(200);
+});
+
+app.use('/live', (request, response) => {
+  return response.sendStatus(200);
 });
 
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`));
