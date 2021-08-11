@@ -10,10 +10,10 @@
   "dependencies": {
     "axios": "^0.21.1",
     "express": "^4.17.1",
-    "opossum": "^5.0.0"
+    "opossum": "^6.2.0"
   },
   "devDependencies": {
-    "concurrently": "^5.2.0",
+    "concurrently": "^6.2.1",
     "lowcarb": "^0.6.0"
   },
   "keywords": [],

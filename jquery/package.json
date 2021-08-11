@@ -12,20 +12,20 @@
     "url": "git://github.com/nodeshift/opossum.git"
   },
   "devDependencies": {
-    "eslint": "6.8.0",
-    "eslint-config-semistandard": "14.0.0",
-    "eslint-config-standard": "13.0.1",
-    "eslint-plugin-promise": "4.2.1",
+    "eslint": "7.32.0",
+    "eslint-config-semistandard": "16.0.0",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-promise": "5.1.0",
     "eslint-plugin-standard": "4.1.0"
   },
   "description": "Simple example with opossum and browser.",
   "dependencies": {
-    "@hapi/boom": "9.1.1",
-    "bootstrap": "4.5.3",
-    "@hapi/hapi": "19.2.0",
+    "@hapi/boom": "9.1.3",
+    "bootstrap": "5.1.0",
+    "@hapi/hapi": "20.1.5",
     "@hapi/inert": "6.0.3",
-    "jquery": "3.5.1",
-    "opossum": "5.1.1"
+    "jquery": "3.6.0",
+    "opossum": "6.2.0"
   },
   "bugs": {
     "url": "https://github.com/nodeshift/opossum/issues"
