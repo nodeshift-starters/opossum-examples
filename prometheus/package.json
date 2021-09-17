@@ -15,7 +15,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.12",
-    "opossum": "6.2.0",
+    "opossum": "6.2.1",
     "opossum-prometheus": "0.3.0"
   }
 }
