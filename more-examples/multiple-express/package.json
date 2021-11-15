@@ -13,7 +13,7 @@
     "opossum": "^6.2.0"
   },
   "devDependencies": {
-    "concurrently": "^6.2.1",
+    "concurrently": "^6.3.0",
     "lowcarb": "^0.6.0"
   },
   "keywords": [],
