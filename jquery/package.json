@@ -20,10 +20,10 @@
   },
   "description": "Simple example with opossum and browser.",
   "dependencies": {
-    "@hapi/boom": "9.1.3",
+    "@hapi/boom": "9.1.4",
     "bootstrap": "5.1.0",
     "@hapi/hapi": "20.1.5",
-    "@hapi/inert": "6.0.3",
+    "@hapi/inert": "6.0.4",
     "jquery": "3.6.0",
     "opossum": "6.2.0"
   },
