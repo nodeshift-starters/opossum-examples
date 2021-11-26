@@ -10,7 +10,7 @@
   "dependencies": {
     "axios": "^0.21.3",
     "express": "^4.17.1",
-    "opossum": "^6.2.0"
+    "opossum": "^6.2.1"
   },
   "devDependencies": {
     "concurrently": "^6.2.1",
