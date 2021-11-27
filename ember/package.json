@@ -15,6 +15,6 @@
     "concurrently": "6.2.1",
     "@hapi/hapi": "20.1.5",
     "url-parse": "1.5.3",
-    "mime": "2.5.2"
+    "mime": "3.0.0"
   }
 }
