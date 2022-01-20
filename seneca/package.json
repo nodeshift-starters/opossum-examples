@@ -27,7 +27,7 @@
     "jquery": "3.6.0",
     "lodash": "4.17.21",
     "opossum": "6.2.1",
-    "seneca": "3.23.3"
+    "seneca": "3.25.0"
   },
   "bugs": {
     "url": "https://github.com/nodeshift/opossum/issues"
