@@ -8,7 +8,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "opossum": "^6.2.0"
+    "opossum": "^6.2.1"
   },
   "devDependencies": {
     "ts-node": "^10.2.1",
