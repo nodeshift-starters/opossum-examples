@@ -1,12 +1,12 @@
 # Basic example with a query that delays
 
 
-Setup mysql container for the example:
+Setup mysql container for the example using either docker or podman:
 ```
-docker pull mysql
-docker run --name my-db -e MYSQL_ROOT_PASSWORD=password -p 3306:3306 -d mysql
-docker container ls
-docker exec -it container_id_here bash
+docker | podman pull mysql
+docker | podman run --name my-db -e MYSQL_ROOT_PASSWORD=password -p 3306:3306 -d mysql
+docker | podman container ls
+docker | podman exec -it container_id_here bash
 mysql -u root -p mysql
 mysql> ALTER USER root IDENTIFIED WITH mysql_native_password BY 'password';
 mysql> create database test;
