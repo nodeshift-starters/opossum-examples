@@ -12,7 +12,7 @@
     "url": "git://github.com/nodeshift/opossum.git"
   },
   "devDependencies": {
-    "eslint": "7.32.0",
+    "eslint": "8.20.0",
     "eslint-config-semistandard": "16.0.0",
     "eslint-config-standard": "16.0.3",
     "eslint-plugin-promise": "5.1.0",
