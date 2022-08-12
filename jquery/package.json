@@ -21,7 +21,7 @@
   "description": "Simple example with opossum and browser.",
   "dependencies": {
     "@hapi/boom": "9.1.4",
-    "bootstrap": "5.1.0",
+    "bootstrap": "5.2.0",
     "@hapi/hapi": "20.1.5",
     "@hapi/inert": "6.0.4",
     "jquery": "3.6.0",
