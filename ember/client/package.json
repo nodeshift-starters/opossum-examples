@@ -46,7 +46,7 @@
     "loader.js": "^4.7.0",
     "opossum": "~6.2.0",
     "qunit": "^2.16.0",
-    "qunit-dom": "^1.6.0",
+    "qunit-dom": "^2.0.0",
     "webpack": "^5.60.0"
   }
 }
