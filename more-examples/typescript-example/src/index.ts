@@ -1,7 +1,7 @@
 import CircuitBreaker from 'opossum';
 
 const delay = (delay) =>
-  new Promise((resolve) => {
+  new Promise<void>((resolve) => {
     setTimeout(() => {
       resolve();
     }, delay);
