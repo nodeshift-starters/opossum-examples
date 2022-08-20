@@ -41,7 +41,7 @@
     "ember-qunit": "^5.1.4",
     "ember-resolver": "^8.0.2",
     "ember-source": "~3.28.4",
-    "eslint-plugin-ember": "^10.5.4",
+    "eslint-plugin-ember": "^11.0.4",
     "eslint-plugin-node": "^11.1.0",
     "loader.js": "^4.7.0",
     "opossum": "~6.2.0",
