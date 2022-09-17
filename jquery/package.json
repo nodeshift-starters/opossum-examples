@@ -24,7 +24,7 @@
     "bootstrap": "5.2.0",
     "@hapi/hapi": "20.2.2",
     "@hapi/inert": "7.0.0",
-    "jquery": "3.6.0",
+    "jquery": "3.6.1",
     "opossum": "6.4.0"
   },
   "bugs": {
