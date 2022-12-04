@@ -13,7 +13,7 @@
   "author": "Helio Frota",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nodemon": "^2.0.14",
     "opossum": "6.2.1",
     "opossum-prometheus": "0.3.0"
