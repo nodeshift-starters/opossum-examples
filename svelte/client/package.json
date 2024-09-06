@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^14.0.0",
-    "@rollup/plugin-node-resolve": "^8.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
     "rollup": "^2.59.0",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-node-polyfills": "^0.2.1",
@@ -17,7 +17,7 @@
     "svelte": "^3.42.4"
   },
   "dependencies": {
-    "axios": "^0.21.3",
+    "axios": "^1.6.8",
     "opossum": "^6.2.0",
     "sirv-cli": "^1.0.14"
   }
