@@ -12,8 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@hapi/boom": "9.1.4",
-    "concurrently": "6.2.1",
-    "@hapi/hapi": "20.1.5",
+    "concurrently": "8.0.0",
+    "@hapi/hapi": "20.2.2",
     "url-parse": "1.5.3",
     "mime": "3.0.0"
   }
