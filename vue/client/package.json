@@ -7,10 +7,10 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "axios": "^0.27.2",
+    "axios": "^1.6.8",
     "core-js": "^3.24.1",
     "opossum": "^6.4.0",
-    "vue": "^3.2.37"
+    "vue": "^3.3.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.8",
